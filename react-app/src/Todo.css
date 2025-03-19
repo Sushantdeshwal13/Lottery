@@ -1,0 +1,188 @@
+/* Todo.css */
+
+/* Global styles */
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main container - Card style */
+  .app-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* App Header */
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+  }
+  
+  /* Input Field */
+  input[type="text"] {
+    width: 80%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.4);
+  }
+  
+  /* Add Task Button */
+  button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+  }
+  
+  /* Task List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Task Item */
+  li {
+    background: #f7f7f7;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  /* Task Text */
+  li span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Task Done */
+  li span.done {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Delete Button */
+  li button {
+    background: #ff4d4f;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  li button:hover {
+    background: #ff7875;
+  }
+  
+  /* Mark as Done Button */
+  li .mark-btn {
+    background: #34c759;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  
+  li .mark-btn:hover {
+    background: #30b455;
+  }
+  
+  /* Uppercase Button */
+  li .uppercase-btn {
+    background: #ffa502;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  
+  li .uppercase-btn:hover {
+    background: #ff9f1a;
+  }
+  
+  /* Horizontal Rule */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 480px) {
+    .app-container {
+      width: 90%;
+    }
+  
+    input[type="text"] {
+      width: 90%;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 8px;
+    }
+  
+    li button {
+      width: 80px;
+      padding: 8px;
+    }
+  }
+  
