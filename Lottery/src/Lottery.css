@@ -22,14 +22,19 @@ h1, h3 {
 
 /* Button styling */
 button {
-    margin: 12px auto;
-    padding: 6px 14px;
-    background: #2196f3;
+    background-color: #57cc99;
     color: white;
+    padding: 20px 50px; 
+    font-size: 1.5rem; 
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-}
+    transition: 0.3s;
+    margin-top: 20px; 
+    margin-left: 40px; 
+  }
+  
+  
 
 button:hover {
     background: #1976d2;
