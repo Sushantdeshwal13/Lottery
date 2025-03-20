@@ -1,0 +1,36 @@
+/* Center content and add spacing */
+.container, .Ticket {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Heading and message styles */
+h1, h3 {
+    text-align: center;
+    color: #4caf50;
+}
+
+/* Ticket number design */
+.Ticket div {
+    padding: 6px 10px;
+    background: #ff9800;
+    color: peru;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    margin: 12px auto;
+    padding: 6px 14px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1976d2;
+}

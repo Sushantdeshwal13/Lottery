@@ -1,0 +1,15 @@
+.Ticket {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Optional: Add space between numbers */
+    margin-top: 10px;
+}
+
+.Ticket div {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 18px;
+    font-weight: bold;
+}
